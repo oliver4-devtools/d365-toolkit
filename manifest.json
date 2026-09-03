@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Oliver4 D365 Toolkit",
+  "short_name": "Oliver4",
+  "version": "2.3.3",
+  "version_name": "v2.3.3",
+  "description": "Developer tools for Dynamics 365 model-driven apps. Open a record and click the icon to bring the toolkit panel up.",
+  "homepage_url": "http://www.oliver4-devtools.com/",
+  "minimum_chrome_version": "111",
+
+  "icons": {
+    "16": "icons/mark-on-light-16.png",
+    "32": "icons/mark-on-light-32.png",
+    "48": "icons/mark-on-light-48.png",
+    "128": "icons/mark-on-light-128.png"
+  },
+
+  "action": {
+    "default_title": "Oliver4 D365 Toolkit",
+    "default_icon": {
+      "16": "icons/mark-on-light-16.png",
+      "32": "icons/mark-on-light-32.png",
+      "48": "icons/mark-on-light-48.png",
+      "128": "icons/mark-on-light-128.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "scripting",
+    "offscreen"
+  ],
+
+  "host_permissions": [
+    "https://*.dynamics.com/*",
+    "https://*.dynamics.cn/*",
+    "https://*.microsoftdynamics.us/*",
+    "https://*.appsplatform.us/*"
+  ]
+}
